@@ -34,8 +34,8 @@ comments :
 # Internal nav
 nav:
   - GALLERY: "https://gaoyuezhou.github.io/photorama/gallery/"  
-  - JOURNAL: "https://gaoyuezhou.github.io/photorama/journal/"
-  - ABOUT: "https://gaoyuezhou.github.io/photorama/about/"
+  # - JOURNAL: "https://gaoyuezhou.github.io/photorama/journal/"
+  # - ABOUT: "https://gaoyuezhou.github.io/photorama/about/"
 
 # All translation keys
 translations:
