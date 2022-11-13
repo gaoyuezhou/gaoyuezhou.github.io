@@ -5207,10 +5207,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
   .container-fluid>.navbar-header,
   .container>.navbar-collapse,
   .container>.navbar-header {
-    margin-top: 12px;
-    margin-right: 50px;
+    /* margin-top: 24px; */
+    /* margin-right: 50px; */
     margin-left: 60px;
-    margin-bottom: 50px
+    margin-bottom: 1px
   }
 }
 
@@ -5524,11 +5524,11 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #777
+  color: #000
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-   color: #0085a1;
+   color: rgb(156, 156, 156);
    background-color: transparent;
 }
 

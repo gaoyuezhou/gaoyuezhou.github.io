@@ -32,8 +32,11 @@ comments :
     short_name : ""
 
 # Internal nav
-# nav:
-#   - GALLERY: "https://gaoyuezhou.github.io/photography/"  
+nav:
+  - Academic: "https://gaoyuezhou.github.io/" 
+  - Photography: "https://gaoyuezhou.github.io/photography/" 
+  - Art: "https://gaoyuezhou.github.io/art/" 
+
 
 # All translation keys
 translations:
