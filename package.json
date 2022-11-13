@@ -1,5 +1,5 @@
 {
-  "name": "photorama",
+  "name": "gaoyuezhou",
   "version": "1.0.0",
   "description": "Theme by [Start Bootstrap](http://startbootstrap.com/).",
   "main": "Gruntfile.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaoyuezhou/photorama.git"
+    "url": "http://gaoyuezhou.github.io"
   },
   "author": "Anna Prigkipaki",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/gaoyuezhou/photorama/issues"
+    "url": "http://gaoyuezhou.github.io/issues"
   },
   "homepage": "http://gaoyuezhou.github.io",
   "dependencies": {

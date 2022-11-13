@@ -1,8 +1,9 @@
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Sans Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
-  color: #eee;
-  background-color: #000;
+  color: rgb(124, 124, 124);
+  background-color: #fff;
+  min-height: 100%;
 }
 p {
   line-height: 1.5;
@@ -21,7 +22,7 @@ h6 {
   font-weight: 800;
 }
 a {
-  color: #760824;
+  color: #ffffff;
   transition: color .4s;
   text-decorarion: none;
 }
@@ -48,7 +49,7 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
-  background-color: transparent;
+  background-color: white;
   position: absolute;
   top: 0;
   left: 0;
@@ -134,12 +135,16 @@ hr.small {
 .intro-header {
   background: no-repeat center center;
   background-color: #808080;
-  background-attachment: scroll;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 50px;
+  margin-top: 80px;
+  /* min-height: 80% !important; */
+  height: 500px;
+  
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -178,7 +183,7 @@ hr.small {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
     font-size: 80px;
-    text-shadow: 1px 1px 4px #000;
+    text-shadow: 1px 1px 10px #000;
   }
 }
 .intro-header .post-heading h1 {

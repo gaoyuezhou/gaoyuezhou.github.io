@@ -11,23 +11,23 @@ comments: "true"
 gallery1: 
   - image_path: /img/galleries/g01/bg1.jpg
     image-caption: IMAGE TITLE
-    image-copyright: © photorama
+    image-copyright: © Gaoyue ZHou
   - image_path: /img/galleries/g01/bg2.jpg
     image-caption: IMAGE TITLE
-    image-copyright: © photorama
+    image-copyright: © Gaoyue Zhou
   - image_path: /img/galleries/g01/bg3.jpg
     image-caption: IMAGE TITLE
-    image-copyright: © photorama 
+    image-copyright: © Gaoyue Zhou 
 gallery2: 
   - image_path: /img/galleries/g02/bg1.jpg
     image-caption: IMAGE TITLE
-    image-copyright: © photorama
+    image-copyright: © Gaoyue Zhou
   - image_path: /img/galleries/g02/bg2.jpg
     image-caption: IMAGE TITLE
-    image-copyright: © photorama
+    image-copyright: © Gaoyue Zhou
   - image_path: /img/galleries/g02/bg3.jpg
     image-caption: IMAGE TITLE
-    image-copyright: © photorama 
+    image-copyright: © Gaoyue Zhou 
 ---
 
 

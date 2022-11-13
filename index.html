@@ -1,158 +1,141 @@
----
-layout: home
-main-title: "PHOT&#8226;O&#8226;RAMA"
-subtitle: "Photo Journal"
-description: "Photography and more"
-images:
- - image_path: /img/slider/home01.jpg
-   gallery-folder: /img/slider/
- - image_path: /img/slider/home02.jpg
-   gallery-folder: /img/slider/
- - image_path: /img/slider/home03.jpg
-   gallery-folder: /img/slider/
----
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-
-<html class="no-js" lang="en">
-<head>
-	<meta content="charset=utf-8">
-
-<!-- CSS -->
-     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css" media="screen" />
-      <link rel="stylesheet" href="{{ site.baseurl }}/css/galleries.css" media="screen" />
-<link rel="stylesheet" href="{{ site.baseurl }}/css/WYSIWYG.css" media="screen" />
-
-
-
-	<!-- Modernizr -->
-  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
-
-
-
+  <title>Gaoyue Zhou</title>
   
-
+  <meta name="author" content="Gaoyue Zhou">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="up7lGZWZsuPP5CTzq4HutpgWopIX13jjZatdp5b_MCU" />
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
 </head>
 
-<body class="fullscreen">
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Gaoyue (Kathy) Zhou</name>
+              </p>
+              <p>I am a first-year MS in Robotics student at <a href='https://www.ri.cmu.edu'>CMU Robotics Institute</a>. Previously,  I did my undergraduate in Computer Science and Applied Mathematics at UC Berkeley. During my time at Berkeley, I had the pleasure to work with <a href='https://people.eecs.berkeley.edu/~svlevine/'>Prof. Sergey Levine</a> and <a href='https://denero.org/'>Prof. John DeNero</a> in the <a href='https://bair.berkeley.edu'>Berkeley Artificial Intelligence Research (BAIR)</a> Lab.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:gaoyuez@andrew.cmu.edu">Email</a> &nbsp/&nbsp
+                <a href="data/Gaoyue_s_Resume_Aug2021.pdf">CV</a> &nbsp/&nbsp
+                <a href="https://github.com/gaoyuezhou/">Github</a> &nbsp/&nbsp
+                <a href="photography/">Photography</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/gaoyuezhou.JPG"><img style="width:100%;max-width:100%" alt="profile photo" src="images/circle-cropped.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I am broadly interested in Robotics, Reinforcement Learning, and NLP. My motivation is to build agents with cognitive capabilities that can learn and infer like humans.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-<!-- MAIN CONTENT SECTION  _____________________________________________-->
-	<section id="content" role="main">
-		<div class="wrapper">
+         
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/teaser_v6.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/view/parrot-rl">
+                <papertitle>Parrot: Data-Driven Behavioral Priors for Reinforcement Learning</papertitle>
+              </a>
+              <br>
 
-			<!-- WYSIWYG -->
+              Avi Singh*, Huihan Liu*, <strong>Gaoyue Zhou</strong>, Albert Yu, Nicholas Rhinehart, Sergey Levine
+              <br>
+              <em>International Conference on Learning Representations (ICLR), 2021</em>
+              <br>
+              <strong>Oral Presentation (top 1.8% of submissions)</strong>
+              <br>
+              <a href="https://arxiv.org/abs/2011.10024">arXiv</a> |
+              <a href="https://www.youtube.com/watch?v=AlNOowphwgs">video</a> | 
+              <a href="https://sites.google.com/view/parrot-rl">project page</a> 
+              <p></p>
+              <p> We proposed a method for pre-training a behavioral prior for reinforcement learning using data from a diverse range of tasks, and used this behavioral prior to speed up learning of new tasks.
 
-		<div class="position-absolute">
-				<h2 class="big no-margin"><strong>{{ page.main-title }}</strong></h2>
-				<h2>{{ page.subtitle }}</h2> 
-                     <div class="entry-summary">
-							<p>{{ page.description }}</p>
-						</div><br />
-			</div>
-			
-			<div class="gallery fullscreen-gallery kenburns-gallery">
+              </p>
+            </td>
+          </tr> 
 
-				<canvas id="kenburns"></canvas>
-				
-{% for image in page.images %}  	
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/wholly.JPG" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Modeling Eva Hild's Sculpture "Wholly"</papertitle>
+              <br>
+              <em>Advised by Prof. Carlo H. Séquin</em>
+              <br>
 
-				<figure class="gallery-item">
-					<header class='gallery-icon'>
-
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-	
-				</header>	
-				</figure>
-
-{% endfor %}
-
-				</div>
-			<!-- END WYSIWYG -->
-			
-	
-		</div><!-- END .wrapper -->
-		
-	</section>
-
-<div id="footer" role="contentinfo">
-		<ul class="soc-icons">
-
-                 {% if site.facebook_username %}
-			<li>
-   <a href="https://facebook.com/{{ site.facebook_username }}" style="
-color:#dddddd; target="_blank" title="Facebook">
-                       <i class="fa fa-facebook"></i>
-                     </span>
-</a></li>
-    {% endif %}
- {% if site.twitter_username %}
-			<li>
-   <a href="https://twitter.com/{{ site.twitter_username }}" style="
-color:#dddddd; target="_blank" title="Twitter">
-                       <i class="fa fa-twitter"></i>
-                     </span>
-</a></li>
-    {% endif %}
-                {% if site.instagram_username %}
-			<li>
-   <a href="https://instagram.com/{{ site.instagram_username }}" style="
-color:#dddddd; target="_blank" title="Instagram">
-                       <i class="fa fa-instagram"></i>
-                     </span>
-</a></li>
-    {% endif %}
-                    {% if site.flickr_username %}
-						<li>
-   <a href="https://flickr.com/photos/{{ site.flickr_username }}" style="
-color:#dddddd; target="_blank" title="Flickr">
-              <i class="fa fa-flickr"></i>
-                     </span>
- </a></li>	
-     {% endif %}
-                    {% if site.deviantart_username %}
-			<li>
-   <a href="http://{{ site.deviantart_username }}.deviantart.com" style="
-color:#dddddd; target="_blank" title="DeviantArt">
-<i class="fa fa-deviantart"></i> </span>
-</a></li>	
-    {% endif %}
-                    {% if site.github_username %}
-                <li>
-   <a href="https://github.com/{{ site.github_username }}" style="
-color:#dddddd; target="_blank" title="Github">
-              <i class="fa fa-github"></i>
-                     </span>
-                   {% endif %}
-<li>
-    <a href="mailto:{{ site.email }}" style="
-color:#dddddd; target="_blank" title="Email">
-              <i class="fa fa-envelope-o"></i></span>
-          </a> </li>
-	
-					
-		</ul>	
-	</div>
-
-  
-<!-- jQuery -->
-  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-  <script src="{{ site.baseurl }}/js/retina.min.js"></script> 
-
-<!-- include mousewheel plugins -->
-<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-<!-- include gallery cycle plugin -->
-<script src="{{ site.baseurl }}/js/jquery.cycle.min.js"></script>
-<!-- include kenburns plugins -->
-<script src="{{ site.baseurl }}/js/kenburns.min.js"></script>
-<!-- include svg line drawing plugin -->
-<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-<!-- include custom script -->
-<script src="{{ site.baseurl }}/js/scripts.js"></script>
+              <a href="data/Tech_Report_Draft_Gaoyue.pdf">tech report</a> 
+              
+              <p></p>
+              <p> We proposed various ways to use CAD Tools for the Procedural Generation of 2-Manifold Sculpture Geometries with high-level control.
+              </p>
+            </td>
+          </tr> 
 
 
-       </body>
-    </html>
+        </tbody></table>
 
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Teaching</heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img style="width:105%;max-width:105%" src="images/berkeley.png">
+            </td>
+            <td width="75%" valign="center">
+              <p>
+              <a href="https://www.eecs189.org">
+                <b>CS 189: Introduction to Machine Learning</b> 
+              </a>, Fall 2020
+            </p>
+
+              <a href="https://www.eecs16b.org">
+                <b>EECS 16B (Designing Information Devices and Systems II)</b> 
+              </a>, Fall 2019, Spring 2020, Spring 2021
+            
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                <a href="https://github.com/jonbarron/jonbarron_website">Website template</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

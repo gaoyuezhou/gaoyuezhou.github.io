@@ -1,0 +1,94 @@
+---
+layout: page
+title: "Photography"
+description: "archive"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+images:
+ - image_path: /img/galleries/g01/IMG_1538 2.JPG
+   gallery-folder: /photography/pittsburgh/
+   gallery-name: Pittsburgh
+   gallery-date: July 2015
+ - image_path: /img/galleries/g02/IMG_3828.JPG
+   gallery-folder: /photography/nature/
+   gallery-name: Nature
+   gallery-date: June 2015
+ - image_path: /img/galleries/g03/IMG_7852.JPG
+   gallery-folder: /photography/oregon/
+   gallery-name: Oregon
+   gallery-date: May 2015
+ - image_path: /img/galleries/g04/11-IMG_6979.JPG
+   gallery-folder: /photography/city_vibe/
+   gallery-name: City Vibe
+   gallery-date: April 2015
+ - image_path: /img/galleries/g05/IMG_0202.JPG
+   gallery-folder: /photography/chicago/
+   gallery-name: Chicago
+   gallery-date: March 2015
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+    <link rel="stylesheet" href="{{ "/css/selena.css" | prepend: site.baseurl }}">
+    <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
+</head>
+
+
+    <body class="gallery">
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br><br>
+			<!-- <h2>{{page.title}}</h2> -->
+			
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+				
+{% for image in page.images %}  	
+
+	               <figure class="gallery-item">
+                         <figure class="effect-selena">
+					<header class='gallery-icon'>
+		       
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary" style="opacity: 1; font-size: 30px;">
+							<h3>{{image.gallery-name}}</h3>
+							<!-- <p>{{image.gallery-date}}</p> -->
+						</div>
+					</figcaption>
+                       </figure>
+				</figure>
+							
+{% endfor %}		
+				
+			</div>
+			
+		</div><!-- END .wrapper -->
+	</section>
+
+
+<br>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+</body></html>

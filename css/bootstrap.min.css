@@ -2062,7 +2062,7 @@ pre code {
 
 @media (min-width:1200px) {
   .container {
-    width: 1170px
+    width: 1370px
   }
 }
 
@@ -4907,7 +4907,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a {
   position: relative;
   display: block;
-  padding: 10px 15px
+  padding: 10px 30px
 }
 
 .nav>li>a:focus,
@@ -5207,8 +5207,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
   .container-fluid>.navbar-header,
   .container>.navbar-collapse,
   .container>.navbar-header {
-    margin-right: 0;
-    margin-left: 0
+    margin-top: 12px;
+    margin-right: 50px;
+    margin-left: 60px;
+    margin-bottom: 50px
   }
 }
 
@@ -5228,7 +5230,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 1030
+  z-index: 1030;
 }
 
 @media (min-width:768px) {
@@ -5309,19 +5311,19 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 .navbar-nav {
   margin: 7.5px -15px;
-  overflow-x: hidden;
+  overflow-x: clip;
   float: right;
   color: white;    
-  background-color: #000;
+  background-color: #fff;
 }
 
 .navbar-nav>li>a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px
+  line-height: 10px
 }
 
-@media (max-width:767px) {
+@media (max-width:2000px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -5501,8 +5503,10 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-default {
-  background-color: transparent;
+  background-color: white;
   border-style: none;
+  width: 100%;
+  height: 110px;
 }
 
 .navbar-default .navbar-brand {

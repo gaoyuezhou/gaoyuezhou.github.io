@@ -53,4 +53,3 @@ Thank you Marianne! :)
 <br>
 <br>
 
-<a href="http://designyourownblog.com/wp-content/uploads/2015/10/biggest-blog-mistake-image-performance-2.jpg">Featured Image Source</a>

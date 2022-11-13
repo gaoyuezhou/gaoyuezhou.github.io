@@ -1,21 +1,21 @@
 # Site settings
-title: PHOTORAMA
+title: Gaoyue's
 email: ""
 description: "Photo Journal"
 url: "https://gaoyuezhou.github.io"
-baseurl: "/photorama"
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
-github_username:  ""
-deviantart_username: ""
-flickr_username: ""
-discus_shortname: ""
+baseurl: ""
+# facebook_username: ""
+twitter_username: 'GaoyueZhou'
+instagram_username: 'gaoyuezhou'
+github_username:  'gaoyuezhou'
+# deviantart_username: ""
+# flickr_username: ""
+# discus_shortname: "" 
 share: true
 
 # Owner/author information
 owner:
-  name:   photorama
+  name:   Gaoyue Zhou
   avatar: avatar.png
   favicon: favicon.ico
   info: photography website template
@@ -32,10 +32,8 @@ comments :
     short_name : ""
 
 # Internal nav
-nav:
-  - GALLERY: "https://gaoyuezhou.github.io/photorama/gallery/"  
-  # - JOURNAL: "https://gaoyuezhou.github.io/photorama/journal/"
-  # - ABOUT: "https://gaoyuezhou.github.io/photorama/about/"
+# nav:
+#   - GALLERY: "https://gaoyuezhou.github.io/photography/"  
 
 # All translation keys
 translations:
