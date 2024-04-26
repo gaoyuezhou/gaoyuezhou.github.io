@@ -7,36 +7,41 @@ album-title: "ART"
 caption: Pittsburgh
 copyright: © Gaoyue Zhou
 images:
+- image_path: /img/art/a-b.JPG
+caption:
 - image_path: /img/art/a-zongzi.JPG
-  caption: Zongzi
+caption: Zongzi
 - image_path: /img/art/a.JPG
-  caption: 
-- image_path: /img/art/ab.jpg
-  caption: 
+caption:
+- image_path: /img/art/ab.png
+caption:
+- image_path: /img/art/ac.jpg
+caption:
 - image_path: /img/art/bee-dog.png
-  caption: Bee-dog
+caption: Bee-dog
 - image_path: /img/art/blueberry.png
-  caption: 
+caption:
 - image_path: /img/art/img_5000.png
-  caption: My dear advisor
+caption: My dear advisor
 - image_path: /img/art/IMG_6771.JPG
-  caption:
+caption:
 - image_path: /img/art/IMG_6971.JPG
-  caption: Painting First Attempt
+caption: Painting First Attempt
 - image_path: /img/art/IMG_6976.jpg
-  caption:
+caption:
 - image_path: /img/art/IMG_7148.jpg
-  caption:
+caption:
 - image_path: /img/art/IMG_8362.jpg
-  caption: Pikachu from iPad
+caption: Pikachu from iPad
 - image_path: /img/art/IMG_8360.jpg
-  caption: Logo Design for UPE from from iPad
+caption: Logo Design for UPE from from iPad
 - image_path: /img/art/IMG_8364.JPG
-  caption: from iPad
+caption: from iPad
 - image_path: /img/art/IMG_8363.jpg
-  caption: from iPad
+caption: from iPad
 ---
 <html class="no-js" lang="en">
+
 <head>
   <meta content="charset=utf-8">
   <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
@@ -44,73 +49,78 @@ images:
 </head>
 
 <body>
-	<section id="content" role="main">
-		<div class="wrapper">
-	  <br><br>
-			<h2 style="font-weight:200; color: rgb(78, 78, 78); font-family: 'Optima'; margin-bottom: 20px; text-transform:uppercase;">{{page.title}}</h2>
+  <section id="content" role="main">
+    <div class="wrapper">
+      <br><br>
+      <h2
+        style="font-weight:200; color: rgb(78, 78, 78); font-family: 'Optima'; margin-bottom: 20px; text-transform:uppercase;">
+        {{page.title}}</h2>
 
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
-				<figure class="gallery-item">
-					<header class='gallery-icon'>
+      <!-- Gallery __-->
+      <div class="gallery masonry-gallery">
 
-            <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ page.title }}" data-caption="{{ page.copyright }}">
-            <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
-					<figcaption class='gallery-caption'>
-						<div class="entry-summary" id="{{ page.caption }}">
-							<h3>{{image.caption}}</h3>
-							<p>{{page.copyright}}</p>
-						</div>
-					</figcaption>
-				</figure>
-{% endfor %}
+        {% for image in page.images %}
+        <figure class="gallery-item">
+          <header class='gallery-icon'>
 
-			</div>
-		</div><!-- END .wrapper -->
-	</section>
+            <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ page.title }}"
+              data-caption="{{ page.copyright }}">
+              <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
 
-<!-- jQuery -->    
+          </header>
+          <figcaption class='gallery-caption'>
+            <div class="entry-summary" id="{{ page.caption }}">
+              <h3>{{image.caption}}</h3>
+              <p>{{page.copyright}}</p>
+            </div>
+          </figcaption>
+        </figure>
+        {% endfor %}
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- include image popups -->
-<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+      </div>
+    </div><!-- END .wrapper -->
+  </section>
 
-<script type="text/javascript">
-      $(document).ready(function($) {
-        $('a.popup').magnificPopup({
-         type: 'image',
-	  gallery:{
-         enabled:true,
-         navigateByImgClick: true,
-         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-       },
-image: {
-      titleSrc: function(item) {
-              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
-            }
+  <!-- jQuery -->
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- include image popups -->
+  <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function ($) {
+      $('a.popup').magnificPopup({
+        type: 'image',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+          titleSrc: function (item) {
+            return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+          }
         }
-          // other options
+        // other options
       });
-});
-    </script>
+    });
+  </script>
 
-<script src="{{ site.baseurl }}/js/retina.min.js"></script>
-<!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
-<!-- include mousewheel plugins -->
-<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-<!-- include carousel plugins -->
-<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
-<!-- include svg line drawing plugin -->
-<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-<!-- include custom script -->
-<script src="{{ site.baseurl }}/js/scripts.js"></script>
-<!-- Modernizr -->
- <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+  <script src="{{ site.baseurl }}/js/retina.min.js"></script>
+  <!-- include Masonry -->
+  <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
+  <!-- include mousewheel plugins -->
+  <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+  <!-- include carousel plugins -->
+  <script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+  <!-- include svg line drawing plugin -->
+  <script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+  <!-- include custom script -->
+  <script src="{{ site.baseurl }}/js/scripts.js"></script>
+  <!-- Modernizr -->
+  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
-    
-</body></html>
+
+</body>
+
+</html>
