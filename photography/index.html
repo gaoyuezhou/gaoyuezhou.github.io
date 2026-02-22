@@ -64,8 +64,8 @@ images:
                          <figure class="effect-selena">
 					<header class='gallery-icon'>
 		       
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+<a href="{{ site.baseurl }}{{ image.gallery-folder }}">
+<img src="{{ site.baseurl }}{{ image.image_path | replace: '.JPG', '-thumb.JPG' | replace: '.jpg', '-thumb.jpg' | replace: '.PNG', '-thumb.PNG' | replace: '.png', '-thumb.png' | replace: '.JPEG', '-thumb.JPEG' | replace: '.jpeg', '-thumb.jpeg' }}"></a>
 
 					</header>	
 					<figcaption class='gallery-caption'>

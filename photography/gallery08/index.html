@@ -40,8 +40,8 @@ images:
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+<a href="{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.baseurl }}{{ image.image_path | replace: '.JPG', '-thumb.JPG' | replace: '.jpg', '-thumb.jpg' | replace: '.PNG', '-thumb.PNG' | replace: '.png', '-thumb.png' | replace: '.JPEG', '-thumb.JPEG' | replace: '.jpeg', '-thumb.jpeg' }}"></a>
 						
 					</header>	
 					<figcaption class='gallery-caption'>
