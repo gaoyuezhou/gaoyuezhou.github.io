@@ -31,7 +31,7 @@
               <p>I am a first-year MS in Robotics student at <a href='https://www.ri.cmu.edu'>CMU Robotics Institute</a>. Previously,  I did my undergraduate in Computer Science and Applied Mathematics at UC Berkeley. During my time at Berkeley, I had the pleasure to work with <a href='https://people.eecs.berkeley.edu/~svlevine/'>Prof. Sergey Levine</a> and <a href='https://denero.org/'>Prof. John DeNero</a> in the <a href='https://bair.berkeley.edu'>Berkeley Artificial Intelligence Research (BAIR)</a> Lab.
               </p> -->
                   </p>
-                  <p>I am a second-year Computer Science Ph.D. student at <a
+                  <p>I am a Computer Science Ph.D. student at <a
                       href='https://cs.nyu.edu/home/index.html'>NYU Courant</a> advised by Professors <a
                       href='https://lerrelpinto.com/'>Lerrel Pinto</a> and <a href='https://yann.lecun.com/'>Yann
                       LeCun</a>.
@@ -72,7 +72,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Research</heading>
                   <p>
-                    I am broadly interested in Robotics, Reinforcement Learning, and NLP. My motivation is to build
+                    I am broadly interested in World Models and Robotics. My motivation is to build
                     agents with cognitive capabilities that can learn and infer like humans.
                   </p>
                 </td>
@@ -83,6 +83,137 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/id_wm.png" alt="project image"
+                    style="width:auto; height:auto; max-width:100%;" />
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <papertitle>ID-WM: Hierarchical World Models with Implicit Dynamics</papertitle>
+                  <br>
+
+                  <strong>Gaoyue Zhou</strong>, Yvonne Wu, Zichen Jeff Cui, Nicolas Ballas, Mido Assran, Lerrel Pinto,
+                  Yann LeCun
+                  <br>
+                  <strong>NeurIPS 2026</strong>
+                  <p></p>
+                  <p> We introduce a hierarchical world model that decouples state-space reachability from local
+                    control: a high-level model samples feasible transitions across the state manifold, while a
+                    low-level world model grounds them into precise actions as an inverse dynamics solver, enabling
+                    long-horizon plans synthesized from short segments.
+
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/patch_policy.png" alt="project image"
+                    style="width:auto; height:auto; max-width:100%;" />
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://patch-policy.github.io/">
+                    <papertitle>Patch Policy: Efficient Embodied Control via Dense Visual Representations</papertitle>
+                  </a>
+                  <br>
+
+                  <strong>Gaoyue Zhou*</strong>, Zichen Jeff Cui*, Ada Langford, Bowen Tan, Yann LeCun, Lerrel Pinto
+                  <br>
+                  <a href="https://arxiv.org/abs/2607.18236">arXiv</a> |
+                  <a href="https://github.com/gaoyuezhou/patch_policy">code</a> |
+                  <a href="https://patch-policy.github.io/">project page</a>
+                  <p></p>
+                  <p> We introduce a minimal architectural extension that lets transformer policies consume dense pre-trained patch tokens directly, improving over global-pooled representations by 40% without the cost of a full VLM backbone.
+
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/temporal_straightening.png" alt="project image"
+                    style="width:auto; height:auto; max-width:100%;" />
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://agenticlearning.ai/temporal-straightening/">
+                    <papertitle>Temporal Straightening for Latent Planning</papertitle>
+                  </a>
+                  <br>
+
+                  Ying Wang, Oumayma Bounou, <strong>Gaoyue Zhou</strong>, Randall Balestriero, Tim G. J. Rudner, Yann
+                  LeCun, Mengye Ren
+                  <br>
+                  <strong>ICML 2026</strong>
+                  <br>
+                  <a href="https://arxiv.org/abs/2603.12231">arXiv</a> |
+                  <a href="https://github.com/agentic-learning-ai-lab/temporal-straightening">code</a> |
+                  <a href="https://agenticlearning.ai/temporal-straightening/">project page</a>
+                  <p></p>
+                  <p> Inspired by perceptual straightening in human vision, we add a curvature regularizer to JEPA world
+                    models so that Euclidean distance in latent space better approximates geodesic distance, improving
+                    gradient-based planning.
+
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/beyond_llms.png" alt="project image"
+                    style="width:auto; height:auto; max-width:100%;" />
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://beyond-llms.github.io/">
+                    <papertitle>Beyond Language Modeling: An Exploration of Multimodal Pretraining</papertitle>
+                  </a>
+                  <br>
+
+                  Shengbang Tong, David Fan, John Nguyen, Ellis Brown, <strong>Gaoyue Zhou</strong>, Shengyi Qian,
+                  Boyang Zheng, Th&eacute;ophane Vallaeys, Junlin Han, Rob Fergus, Naila Murray, Marjan Ghazvininejad,
+                  Mike Lewis, Nicolas Ballas, Amir Bar, Michael Rabbat, Jakob Verbeek, Luke Zettlemoyer, Koustuv Sinha,
+                  Yann LeCun, Saining Xie
+                  <br>
+                  <strong>ICML 2026 (Spotlight)</strong>
+                  <br>
+                  <a href="https://arxiv.org/abs/2603.03276">arXiv</a> |
+                  <a href="https://beyond-llms.github.io/">project page</a>
+                  <p></p>
+                  <p> Through controlled pretraining experiments over text, image-text pairs, video, and
+                    action-conditioned video, we study how visual data complements language, and find that multimodal
+                    pretraining naturally gives rise to world modeling capabilities.
+
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/dexwm.png" alt="project image"
+                    style="width:auto; height:auto; max-width:100%;" />
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://raktimgg.github.io/dexwm/">
+                    <papertitle>DexWM: World Models for Learning Dexterous Hand-Object Interactions from Human Videos</papertitle>
+                  </a>
+                  <br>
+
+                  Raktim Gautam Goswami, Amir Bar, David Fan, Tsung-Yen Yang, <strong>Gaoyue Zhou</strong>, Prashanth
+                  Krishnamurthy, Michael Rabbat, Farshad Khorrami, Yann LeCun
+                  <br>
+                  <strong>ECCV 2026</strong>
+                  <br>
+                  <a href="https://arxiv.org/abs/2512.13644">arXiv</a> |
+                  <a href="https://github.com/facebookresearch/dexwm">code</a> |
+                  <a href="https://raktimgg.github.io/dexwm/">project page</a>
+                  <p></p>
+                  <p> We represent dexterous actions as finger keypoints extracted from egocentric video, allowing a
+                    world model to train on over 900 hours of human and robot data and transfer zero-shot to unseen
+                    skills on a real dexterous hand.
+
+                  </p>
+                </td>
+              </tr>
 
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
